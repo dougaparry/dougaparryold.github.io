@@ -4,8 +4,13 @@
 	box-sizing: border-box;
 }
 
+body{
+font-family: "Helvetica Neue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+font-weight: 300;
+}
+
 html{
-	font: normal 16px sans-serif;
+	font: normal 16px;
 	color: #555;
 	height: 100%;
 }
@@ -69,7 +74,7 @@ section h3.title{
 	color: #414a4f;
 	text-transform: capitalize;
 	font: bold 32px 'Open Sans', sans-serif;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -114,7 +119,7 @@ section h3.title{
 
 .hero h3{
 	font: normal 28px 'Open Sans', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .hero h4{
 	font: normal 24px 'Open Sans', sans-serif;
@@ -138,6 +143,22 @@ section h3.title{
 
 	.hero a.btn{
 		padding: 15px 40px;
+	}
+
+}
+
+.description{
+	width: 60%;
+}
+
+.description p{
+	font-size: 20px;
+	text-align: justify;
+}
+
+@media (max-width: 700px){
+	.description{width: 90%;
+	text-align: justify;
 	}
 
 }
@@ -330,8 +351,12 @@ section h3.title{
 	color: black;
 }
 
+
 .social-links ul{
 	display: flex;
+	flex-flow: row wrap;
+	flex: 0 0 calc(16.67% - 8px);
+	margin: 4px;
 	font-size: 75px;
 }
 
@@ -348,9 +373,13 @@ section h3.title{
 }
 
 @media (max-width: 700px){
-
-	.social-links{
-		padding: 20px 15px;
+	.social-links ul{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.social-links ul li{
+		flex: 3 0 25%;
+		margin: 0px;
 	}
 
 }
